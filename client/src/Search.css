@@ -1,0 +1,206 @@
+/* ================= Base Wrapper ================= */
+
+.shl-search-wrapper {
+  background: #f4f6f9;
+  padding: 24px;
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ================= Search Panel ================= */
+
+.shl-search-panel {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.shl-search-panel h2 {
+  margin: 0 0 6px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #003a8f; /* SHL blue */
+}
+
+.shl-search-panel p {
+  margin: 0 0 20px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ================= Long Search Bar ================= */
+
+.shl-search-input {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.shl-search-input input {
+  flex: 1;
+  padding: 16px 18px;
+  font-size: 15px;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+}
+
+.shl-search-input input:focus {
+  outline: none;
+  border-color: #003a8f;
+  background: #ffffff;
+}
+
+.shl-search-input button {
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: #003a8f;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.shl-search-input button:hover {
+  background: #002b6b;
+}
+
+/* ================= Status Text ================= */
+
+.shl-status {
+  text-align: center;
+  margin: 22px 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ================= Results Container ================= */
+
+.shl-results {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* ✅ spacing between job cards */
+}
+
+/* ================= Result Card ================= */
+
+.shl-result-row {
+  background: #ffffff;
+  padding: 22px 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.shl-result-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= Result Content ================= */
+
+.shl-result-main h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* ================= Meta Info ================= */
+
+.shl-meta {
+  display: flex;
+  gap: 28px;
+  font-size: 13px;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.shl-meta strong {
+  font-weight: 600;
+}
+
+/* ================= Job Description ================= */
+
+.shl-desc-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.shl-desc {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* ================= Read More Link ================= */
+
+.shl-link {
+  background: none;
+  border: none;
+  color: #003a8f;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 6px;
+}
+
+.shl-link:hover {
+  text-decoration: underline;
+}
+
+/* ================= Pagination ================= */
+
+.shl-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.shl-pagination button {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.shl-pagination button:hover:not(:disabled) {
+  background: #003a8f;
+  color: white;
+  border-color: #003a8f;
+  box-shadow: 0 6px 16px rgba(0, 58, 143, 0.25);
+  transform: translateY(-2px);
+}
+
+.shl-pagination button:active:not(:disabled) {
+  transform: scale(0.96);
+  box-shadow: 0 3px 8px rgba(0, 58, 143, 0.2);
+}
+
+.shl-pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.shl-pagination span {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+}
+
