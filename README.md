@@ -155,7 +155,7 @@ To run this project, make sure you have the following installed:
 
 ## Author
 
-**Naveen Kumar**  
+**Naveen Kumar P**  
 SHL Research Intern Candidate  
 MERN Stack | Search Systems | Scalable Architectures  
 
